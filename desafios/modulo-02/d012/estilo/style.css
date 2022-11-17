@@ -17,9 +17,10 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
     font-family: var(--fonte1);
+    background-color: darkgray;
 }
+
 
 header {
     background-color: black;
@@ -55,12 +56,13 @@ section {
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
+    
 }
 section > p { 
     padding-bottom: 2em;
 }
 section.normal {
-    background-color: white;
+    background-color: antiquewhite;
     color: black;
 }
 
