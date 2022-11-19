@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightseagreen;
+            margin: 0;
+            position: relative;
+            
+        }
+        h1 {
+            display: block;
+            color: white;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
+            background-color: darkgray;
+            padding: 30px;
+            margin-top: 0;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.329);
+            position: sticky;
+            top: 0;
+
+            
+        }
+        section {
+            border-radius: 5px;
+            background-color: antiquewhite;
+            padding: 10px;
+            width: 410px;
+            margin: auto;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+        }
+        
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            margin: auto;
+            background-color: white;
+            
+            
+        }
+        caption {
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+        
+        td, th {
+            border: 1px solid black;
+            padding: 15px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.479);
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 100px;
+            background-color: #383838;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>USO DE TABELAS GRANDES</h1>
+    <!--
+        ANATOMIA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <section>
+        <table>
+            <caption>Lista de Estados por Habitantes</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 20px;">Índice</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>São Paulo</td>
+                    <td class="num">46.649.132</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Minas Gerais</td>
+                    <td class="num">21.411.923</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17.463.349</td>
+                <tr>
+                    <td>4</td>
+                    <td>Bahia</td>
+                    <td class="num">14.985.284</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Paraná</td>
+                    <td class="num">11.597.484</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">11.466.630</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Pernambuco</td>
+                    <td class="num">9.674.793</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Ceará</td>
+                    <td class="num">9.240.580</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Pará</td>
+                    <td class="num">8.777.124</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Santa Catarina</td>
+                    <td class="num">7.338.473</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Goiás</td>
+                    <td class="num">7.206.589</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Maranhão</td>
+                    <td class="num">7.153.262</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Amazonas</td>
+                    <td class="num">4.269.995</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Espiríto Santo</td>
+                    <td class="num">4.108.508</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Paraíba</td>
+                    <td class="num">4.059.905</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Mato Grosso</td>
+                    <td class="num">3.567.234</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Rio Grande do Norte</td>
+                    <td class="num">3.560.903</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Alagoas</td>
+                    <td class="num">3.365.351</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Piauí</td>
+                    <td class="num">3.289.290</td>
+                </tr>
+                <tr>
+                    <td><strong>20</strong></td>
+                    <td><strong>Distrito Federal</strong></td>
+                    <td class="num"><strong>3.094.325</strong></td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Mato Grosso do Sul</td>
+                    <td class="num">2.839.188</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Sergipe</td>
+                    <td class="num">2.338.474</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Rondônia</td>
+                    <td class="num">1.815.278</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>Tocantins</td>
+                    <td class="num">1.607.363</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>Acre</td>
+                    <td class="num">906.876</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>Amapá</td>
+                    <td class="num">877.613</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Roraima</td>
+                    <td class="num">652.713</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <th scope="row">Total de Habitantes:</th>
+                    <td class="num"><strong>213.317.639</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+</html>
